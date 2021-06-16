@@ -8,7 +8,7 @@ def ruby_version(file = '.ruby-version')
 end
 ruby ruby_version
 
-gem 'rails', '~> 5.2', '>= 5.2.1'
+gem 'rails', '~> 6.1.3'
 
 # General
 gem 'silencer', '~> 1.0', '>= 1.0.1'
