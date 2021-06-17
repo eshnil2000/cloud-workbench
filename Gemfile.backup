@@ -7,8 +7,8 @@ def ruby_version(file = '.ruby-version')
   File.read(path).chomp!
 end
 ruby ruby_version
-gem 'actionpack'
-gem 'rails','~> 6.1.3'
+
+gem 'rails', '~> 6.1.3'
 
 # General
 gem 'silencer', '~> 1.0', '>= 1.0.1'
@@ -16,7 +16,7 @@ gem 'whenever', '~> 0.10.0'
 gem 'cron2english', '~> 0.1.6'
 gem 'delayed_job_active_record', '~> 4.1', '>= 4.1.3'
 gem 'enumerize', '~> 2.2', '>= 2.2.2'
-gem 'deep_cloneable'
+gem 'deep_cloneable', '~> 2.3', '>= 2.3.2'
 
 # Authentication
 gem 'devise', '~> 4.6', '>= 4.6.2'
@@ -29,7 +29,7 @@ gem 'devise', '~> 4.6', '>= 4.6.2'
 # https://samsaffron.com/archive/2015/03/31/debugging-memory-leaks-in-ruby
 # Migration from LESS to SASS is required to drop this dependency
 gem 'therubyracer', '~> 0.12.3', platforms: :ruby
-gem 'less-rails'
+gem 'less-rails', '~> 3.0'
 gem 'uglifier', '~> 4.1', '>= 4.1.18'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
@@ -48,7 +48,7 @@ gem 'pry-rails' # Use pry as Rails console
 
 # `Procfile`-based process manager: http://ddollar.github.io/foreman/
 # Used in production to export into other formats (e.g., Upstart)
-gem 'foreman'
+gem 'foreman', '~> 0.85.0'
 
 # Boot large apps faster
 gem 'bootsnap', '~> 1.3', '>= 1.3.1'
@@ -108,7 +108,7 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'faker'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.8'
   gem 'rspec-its' # Support for deprecated `its` syntax in RSpec 3
   gem 'fuubar' # RSpec progress bar formatter
   gem 'spring-commands-rspec'
